@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist - Lista de Compras</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <button class="voltar" aria-label="Voltar">
+                <i class="ph ph-arrow-left"></i>
+            </button>
+            <h1>Lista de Compras</h1>
+        </header>
+
+        <form id="formulario">
+            <div class="campo-texto">
+                <input type="text" id="entrada" placeholder="Adicione um novo item" required>
+            </div>
+            <button type="submit" class="botao-add">Adicionar item</button>
+        </form>
+
+        <ul id="lista">
+            <li class="item">
+                <div class="conteudo">
+                    <input type="checkbox" class="caixa-selecao" id="item-1">
+                    <label for="item-1">Maçã</label>
+                </div>
+                <button class="botao-apagar" aria-label="Remover item">
+                    <i class="ph ph-trash"></i>
+                </button>
+            </li>
+            
+            <li class="item">
+                <div class="conteudo">
+                    <input type="checkbox" class="caixa-selecao" id="item-2" checked>
+                    <label for="item-2">Pão Integral</label>
+                </div>
+                <button class="botao-apagar" aria-label="Remover item">
+                    <i class="ph ph-trash"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="alerta" class="escondido">
+        <i class="ph ph-warning-circle"></i>
+        <span>O item foi removido da lista</span>
+        <button class="fechar-alerta">
+            <i class="ph ph-x"></i>
+        </button>
+    </div>
+
+    <footer>
+        <p>Feito por <strong>Richard</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
