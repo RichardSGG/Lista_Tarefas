@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist - Lista de Compras</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="principal">
         <header>
             <button class="voltar" aria-label="Voltar">
                 <i class="ph ph-arrow-left"></i>
             </button>
-            <h1>Lista de Compras</h1>
+            <h1>Compras da semana</h1>
         </header>
 
         <form id="formulario">
@@ -32,17 +34,37 @@
             <li class="item">
                 <div class="conteudo">
                     <input type="checkbox" class="caixa-selecao" id="item-1">
-                    <label for="item-1">Maçã</label>
+                    <label for="item-1">pão de forma</label>
                 </div>
                 <button class="botao-apagar" aria-label="Remover item">
                     <i class="ph ph-trash"></i>
                 </button>
             </li>
-            
+
             <li class="item">
                 <div class="conteudo">
-                    <input type="checkbox" class="caixa-selecao" id="item-2" checked>
-                    <label for="item-2">Pão Integral</label>
+                    <input type="checkbox" class="caixa-selecao" id="item-2">
+                    <label for="item-2">Café preto</label>
+                </div>
+                <button class="botao-apagar" aria-label="Remover item">
+                    <i class="ph ph-trash"></i>
+                </button>
+            </li>
+
+            <li class="item">
+                <div class="conteudo">
+                    <input type="checkbox" class="caixa-selecao" id="item-3">
+                    <label for="item-3">Suco de laranja</label>
+                </div>
+                <button class="botao-apagar" aria-label="Remover item">
+                    <i class="ph ph-trash"></i>
+                </button>
+            </li>
+
+            <li class="item">
+                <div class="conteudo">
+                    <input type="checkbox" class="caixa-selecao" id="item-4"    >
+                    <label for="item-4">Bolacha</label>
                 </div>
                 <button class="botao-apagar" aria-label="Remover item">
                     <i class="ph ph-trash"></i>
@@ -65,4 +87,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
